@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Património Editorial</title>
+        <link rel="icon" type="image/png" href="images/patrimoniologo.png">
+        <link rel="shortcut icon" type="image/png" href="images/patrimonioeditoriallogo.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="images/patrimoniologo.png" alt="Logo Editora" id="logo-img" draggable="true">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate="inicio">Início</a></li>
+                <li><a href="catalogo.html" data-translate="catalogo">Catálogo</a></li>
+                <li><a href="sobre.html" data-translate="sobre">Sobre</a></li>
+                <li>
+                    <button id="translate-btn">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>        
+        <div id="language-modal" class="modal">
+            <div class="modal-content">
+                <div class="language-option">
+                    <img src="images/Portugalflag.png" alt="Português">
+                    <span>Portuguez</span>
+                </div>
+                <div class="language-option">
+                    <img src="images/flagcastille.png" alt="Castellano">
+                    <span>Castellano</span>
+                </div>
+                <div class="language-option">
+                    <img src="images/Royal_flag_of_France.svg.png" alt="Français">
+                    <span>Français</span>
+                </div>
+                <div class="language-option">
+                    <img src="images/Flag_of_England.svg.png" alt="English">
+                    <span>English</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('images/libraryimage.jpg')">
+            <div class="hero-content">
+                <h1 data-translate="hero_title">Historias que Atravessam Seculos</h1>
+                <p data-translate="hero_subtitle">Descubra nossa collecção de obras litterarias extraordinarias</p>
+                <a href="catalogo.html" class="cta-button" data-translate="catalogo">Catálogo</a>
+            </div>
+        </section>
+    
+        <section class="featured-books">
+            <h2 data-translate="destaques">Destaques do Mez</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/Iconografia9.jpg" alt="Livro 1">
+                    </div>
+                    <h3>Iconographia - 9ª Edição</h3>
+                    <p>Património Editorial</p>
+                    <a href="catalogo.html" class="book-button" data-translate="saiba_mais">Saiba Mais</a>
+                </div>
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/SalazarLivro.jpg" alt="Livro 2">
+                    </div>
+                    <h3>Salazar, A Mocidade e os Principios</h3>
+                    <p>Franco Nogueira</p>
+                    <a href="catalogo.html" class="book-button">Saiba Mais</a>
+                </div>
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="images/Iconografia8.jpg" alt="Livro 3">
+                    </div>
+                    <h3>Iconographia - 8ª Edição</h3>
+                    <p>Património Editorial</p>
+                    <a href="catalogo.html" class="book-button">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="quote-section">
+            <div class="quote-content">
+                <i class="fas fa-quote-left"></i>
+                <blockquote data-translate="quote">
+                    "Não somos patriotas por sermos monarchicos. Somos monarchicos por sermos patriotas."
+                    - António Sardinha
+                </blockquote>
+            </div>
+        </section>
+    
+        <section class="news-section">
+            <h2 data-translate="carta_title">A CARTA</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/acarta1.jpg" alt="Notícia 1">
+                    </div>
+                    <div class="news-content">
+                        <h3 data-translate="carta_title">A Carta</h3>
+                        <p data-translate="carta_desc">A Carta para o futuro de Portugal</p>
+                        <span class="date">14 Março 2024</span>
+                        <a href="https://patrimonioeditorial.substack.com/p/a-carta" target="_blank" class="carta-btn" data-translate="ler_carta">Ler A Carta</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="images/patrimoniologo.png" alt="Património Editorial" class="footer-logo">
+                <p class="footer-slogan">Fides et Traditio</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-translate="navegacao">Navegação</h3>
+                <ul>
+                    <li><a href="index.html" data-translate="inicio">Início</a></li>
+                    <li><a href="catalogo.html" data-translate="catalogo">Catálogo</a></li>
+                    <li><a href="sobre.html" data-translate="sobre">Sobre</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3 data-translate="contactos">Contactos</h3>
+                <ul>
+                    <li>Email: patrimonioeditorial2023@gmail.com</li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3 data-translate="redes_sociais">Redes Sociaes</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/patrimonio_editorial/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p data-translate="copyright">© 2025 Património Editorial. Todos os direictos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

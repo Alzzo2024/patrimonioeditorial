@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="catalog_title">Catálogo - Património Editorial</title>
+    <link rel="icon" type="image/png" href="images/patrimoniologo.png">
+    <link rel="shortcut icon" type="image/png" href="images/patrimonioeditoriallogo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header from main page -->
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="images/patrimoniologo.png" alt="Logo Editora" id="logo-img" draggable="true">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate="inicio">Início</a></li>
+                <li><a href="catalogo.html" data-translate="catalogo">Catálogo</a></li>
+                <li><a href="sobre.html" data-translate="sobre">Sobre</a></li>
+                <li>
+                    <button id="translate-btn">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav> 
+        <div id="language-modal" class="modal">
+            <div class="modal-content">
+                <div class="language-option">
+                    <img src="images/Portugalflag.png" alt="Português">
+                    <span>Portuguez</span>
+                </div>
+                <div class="language-option">
+                    <img src="images/flagcastille.png" alt="Castellano">
+                    <span>Castellano</span>
+                </div>
+                <div class="language-option">
+                    <img src="images/Royal_flag_of_France.svg.png" alt="Français">
+                    <span>Français</span>
+                </div>
+                <div class="language-option">
+                    <img src="images/Flag_of_England.svg.png" alt="English">
+                    <span>English</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="catalog-main">
+        <!-- Catalog Hero -->
+        <section class="catalog-hero">
+            <h1 data-translate="nosso_catalogo">Nosso Catálogo</h1>
+            <p data-translate="catalogo_desc">Explore nossa collecção de obras clássicas e contemporâneas</p>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Pesquisar livros...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filters">
+                <select id="genreFilter">
+                    <option value="all">Todos os Géneros</option>
+                    <option value="politica">Politica</option>
+                    <option value="religiao">Religião</option>
+                    <option value="nacionalismo">Nacionalismo</option>
+                    <option value="integralismo">Integralismo</option>
+                </select>
+                <select id="sortFilter">
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                    <option value="recent">Mais Recente</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Books Grid -->
+    <section class="books-grid" id="booksGrid">
+         <div class="book-card">
+            <div class="book-image">
+                <img src="images/SalazarLivro.jpg" alt="Salazar">
+            </div>
+            <div class="book-info">
+                <h3>Salazar, A Mocidade e os Princípios - VOL. I</h3>
+                <p class="author">Franco Nogueira</p>
+                <p class="genre">Politica</p>
+                <p class="price">Grátis</p>
+                <div class="book-actions">
+                    <a href="https://drive.google.com/file/d/1saebC189ifphU77GMQ1DpksqpIcMmv-c/view?usp=drive_link" target="_blank" class="buy-btn">Ver</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="images/SCLOS.jpg" alt="São Camilo">
+            </div>
+            <div class="book-info">
+                <h3>São Camilo de Léllis, a Obra de um Sancto</h3>
+                <p class="author">Simão Araújo</p>
+                <p class="genre">Religião</p>
+                <p class="price">Grátis</p>
+                <div class="book-actions">
+                    <a href="https://drive.google.com/file/d/1I9RhBVck0pt045svy4NDwyj4qVk90z3B/view?usp=drive_link" target="_blank" class="buy-btn">Ver</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="images/UPC.jpg" alt="Codreanu">
+            </div>
+            <div class="book-info">
+                <h3>A última páscoa de Codreanu</h3>
+                <p class="author">Sociedade Editora Dácia</p>
+                <p class="genre">Nacionalismo</p>
+                <p class="price">Grátis</p>
+                <div class="book-actions">
+                    <a href="https://drive.google.com/file/d/1J5jO6kqVkPIWPgGKOw_e4CkSEn2vqZI6/view?usp=drive_link" target="_blank" class="buy-btn">Ver</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="images/ILHVV.jpg" alt="Integralismo">
+            </div>
+            <div class="book-info">
+                <h3>O Integralismo Lusitano e a herança de Os Vencidos da Vida</h3>
+                <p class="author">José Manuel Quintas</p>
+                <p class="genre">Integralismo</p>
+                <p class="price">Grátis</p>
+                <div class="book-actions">
+                    <a href="https://drive.google.com/file/d/1FTWbspLZCn-zedVZwpAHuHZZUcWE1Zaj/view?usp=drive_link" target="_blank" class="buy-btn">Ver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Iconographia Magazine Section -->
+        <section class="magazine-section">
+            <h2 data-translate="iconographia">Iconographia</h2>
+            <p class="magazine-description" data-translate="iconographia_desc">Nossa revista dedicada ao Catholicismo Dark</p>
+            
+            <div class="magazine-grid">
+                <div class="magazine-card">
+                    <img src="images/Iconografia1.jpg" alt="Iconographia Edição 1">
+                    <div class="magazine-info">
+                        <h3 data-translate="edition_1_title">Edição I - 21 de Janeiro de 2024</h3>
+                        <p data-translate="edition_1_desc">O Protestantismo</p>
+                        <a href="https://drive.google.com/file/d/1dL0xFabqxtDnLWRCX9f3AYnttEUV2io2/view?usp=drive_link" target="_blank" class="read-btn" data-translate="read_now">Ler Agora</a>
+                    </div>
+                </div>
+        
+                <div class="magazine-card">
+                    <img src="images/Iconografia2.jpg" alt="Iconographia Edição 2">
+                    <div class="magazine-info">
+                        <h3 data-translate="edition_2_title">Edição II - 3 de Fevereiro de 2024</h3>
+                        <p data-translate="edition_2_desc">São João Crisóstomo</p>
+                        <a href="https://drive.google.com/file/d/1d4gbDcICZlhDLSRW139m39jctQyQ3BcK/view?usp=drive_link" target="_blank" class="read-btn" data-translate="read_now">Ler Agora</a>
+                    </div>
+                </div>
+        
+                <div class="magazine-card">
+                    <img src="images/Iconografia3.jpg" alt="Iconographia Edição 3">
+                    <div class="magazine-info">
+                        <h3 data-translate="edition_3_title">Edição III - 9 de Fevereiro de 2024</h3>
+                        <p data-translate="edition_3_desc">São Carlo Acutis</p>
+                        <a href="https://drive.google.com/file/d/1dfex2dwuV85CCK-gQ1350CpH1hhW1EQx/view?usp=drive_link" target="_blank" class="read-btn" data-translate="read_now">Ler Agora</a>
+                    </div>
+                </div>
+        
+                <div class="magazine-card">
+                    <img src="images/Iconografia4.jpg" alt="Iconographia Edição 4">
+                    <div class="magazine-info">
+                        <h3 data-translate="edition_4_title">Edição IV - 18 de Fevereiro de 2024</h3>
+                        <p data-translate="edition_4_desc">Os Coptas</p>
+                        <a href="https://drive.google.com/file/d/1g2n6Ooieu4TqWX9fRKwIoX3gHKeMs-CQ/view?usp=drive_link" target="_blank" class="read-btn" data-translate="read_now">Ler Agora</a>
+                    </div>
+                </div>
+        
+                <div class="magazine-card">
+                    <img src="images/Iconografia5.jpg" alt="Iconographia Edição 5">
+                    <div class="magazine-info">
+                        <h3 data-translate="edition_5_title">Edição V - 3 de Março de 2024</h3>
+                        <p data-translate="edition_5_desc">Nossa Senhora de Fátima e as aparições</p>
+                        <a href="https://drive.google.com/file/d/1ivP6t11isR51SDtMqolr48mISp5Fg65C/view?usp=drive_link" target="_blank" class="read-btn" data-translate="read_now">Ler Agora</a>
+                    </div>
+                </div>
+        
+                <div class="magazine-card">
+                    <img src="images/Iconografia6.jpg" alt="Iconographia Edição 6">
+                    <div class="magazine-info">
+                        <h3 data-translate="edition_6_title">Edição VI - 17 de Março de 2024</h3>
+                        <p data-translate="edition_6_desc">Os catholicos etiopes</p>
+                        <a href="https://drive.google.com/file/d/1oflLK2KULPZKEvZJsifgO6-4eyQTC5j8/view?usp=drive_link" target="_blank" class="read-btn" data-translate="read_now">Ler Agora</a>
+                    </div>
+                </div>
+        
+                <div class="magazine-card">
+                    <img src="images/Iconografia7.jpg" alt="Iconographia Edição 7">
+                    <div class="magazine-info">
+                        <h3 data-translate="edition_7_title">Edição VII - 30 de Março de 2024</h3>
+                        <p data-translate="edition_7_desc">Cristianismo na Arménia</p>
+                        <a href="https://drive.google.com/file/d/1tjrocYPzuv1CK7RT7i_q2Ter4hxQgBTg/view?usp=drive_link" target="_blank" class="read-btn" data-translate="read_now">Ler Agora</a>
+                    </div>
+                </div>
+        
+                <div class="magazine-card">
+                    <img src="images/Iconografia8.jpg" alt="Iconographia Edição 8">
+                    <div class="magazine-info">
+                        <h3 data-translate="edition_8_title">Edição VIII - 28 de Abril de 2024</h3>
+                        <p data-translate="edition_8_desc">São Jorge da Capadócia</p>
+                        <a href="https://drive.google.com/file/d/14-oQHlS9iWEoqbr6cPdf4zezCOOrE-CN/view?usp=drive_link" target="_blank" class="read-btn" data-translate="read_now">Ler Agora</a>
+                    </div>
+                </div>
+        
+                <div class="magazine-card">
+                    <img src="images/Iconografia9.jpg" alt="Iconographia Edição 9">
+                    <div class="magazine-info">
+                        <h3 data-translate="edition_9_title">Edição IX - 29 de Agosto de 2024</h3>
+                        <p data-translate="edition_9_desc">Guerra Civil Espanhola</p>
+                        <a href="https://drive.google.com/file/d/1r7P17d1Z7TBYP6oxJ6SWYPdyaDm3nR9E/view?usp=drive_link" target="_blank" class="read-btn" data-translate="read_now">Ler Agora</a>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="images/patrimoniologo.png" alt="Património Editorial" class="footer-logo">
+                <p class="footer-slogan">Fides et Traditio</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contactos</h3>
+                <ul>
+                    <li>Email: patrimonioeditorial2023@gmail.com</li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Redes Sociaes</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/patrimonio_editorial/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>© 2025 Património Editorial. Todos os direictos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
