@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p class="genre">${book.genre}</p>
                         <p class="price">${book.price}</p>
                         <div class="book-actions">
-                            <a href="${book.link}" target="_blank" class="buy-btn">Ver</a>
+                            <a href="${book.link}" target="_blank" class="buy-btn">Ler</a>
                         </div>
                     </div>
                 </div>
@@ -242,6 +242,8 @@ const translations = {
         "edition_8_desc": "São Jorge da Capadócia",
         "edition_9_title": "Edição IX - 29 de Agosto de 2024",
         "edition_9_desc": "Guerra Civil Espanhola",
+        "edition_10_title": "Edição X - 17 de Fevereiro de 2025",
+        "edition_10_desc": "São Valentim",
         "read_now": "Ler Agora",
         "nosso_catalogo": "Nosso Catálogo",
         "catalogo_desc": "Explore nossa collecção de obras clássicas e contemporâneas"
@@ -290,24 +292,26 @@ const translations = {
         "ler_agora": "Read Now",
         "iconographia": "Iconographia",
         "iconographia_desc": "Our magazine dedicated to Dark Catholicism",
-        "edition_1_title": "Edition I - January 21, 2024",
+        "edition_1_title": "Edition I - 21 January, 2024",
         "edition_1_desc": "Protestantism",
-        "edition_2_title": "Edition II - February 3, 2024",
+        "edition_2_title": "Edition II - 3 February, 2024",
         "edition_2_desc": "Saint John Chrysostom",
-        "edition_3_title": "Edition III - February 9, 2024",
+        "edition_3_title": "Edition III - 9 February, 2024",
         "edition_3_desc": "Saint Carlo Acutis",
-        "edition_4_title": "Edition IV - February 18, 2024",
+        "edition_4_title": "Edition IV - 18 February, 2024",
         "edition_4_desc": "The Copts",
-        "edition_5_title": "Edition V - March 3, 2024",
+        "edition_5_title": "Edition V - 3 March, 2024",
         "edition_5_desc": "Our Lady of Fatima and the apparitions",
-        "edition_6_title": "Edition VI - March 17, 2024",
+        "edition_6_title": "Edition VI - 17 March , 2024",
         "edition_6_desc": "The Ethiopian Catholics",
-        "edition_7_title": "Edition VII - March 30, 2024",
+        "edition_7_title": "Edition VII - 30 March, 2024",
         "edition_7_desc": "Christianity in Armenia",
-        "edition_8_title": "Edition VIII - April 28, 2024",
+        "edition_8_title": "Edition VIII - 28 April, 2024",
         "edition_8_desc": "Saint George of Cappadocia",
-        "edition_9_title": "Edition IX - August 29, 2024",
+        "edition_9_title": "Edition IX - 29 August, 2024",
         "edition_9_desc": "Spanish Civil War",
+        "edition_10_title": "Edition X - 17 February, 2025",
+        "edition_10_desc": "Saint Valentine",
         "read_now": "Read Now",
         "nosso_catalogo": "Our Catalog",
         "catalogo_desc": "Explore our collection of classic and contemporary works"
@@ -374,6 +378,8 @@ const translations = {
         "edition_8_desc": "Saint Georges de Cappadoce",
         "edition_9_title": "Édition IX - 29 Août 2024",
         "edition_9_desc": "Guerre Civile Espagnole",
+        "edition_10_title": "Édition X - 17 Février 2025",
+        "edition_10_desc": "Saint Valentin",
         "read_now": "Lire Maintenant",
         "nosso_catalogo": "Notre Catalogue",
         "catalogo_desc": "Explorez notre collection d'œuvres classiques et contemporaines"
@@ -440,6 +446,8 @@ const translations = {
         "edition_8_desc": "San Jorge de Capadocia",
         "edition_9_title": "Edición IX - 29 de Agosto de 2024",
         "edition_9_desc": "Guerra Civil Española",
+        "edition_10_title": "Edición X - 17 de Febrero de 2025",
+        "edition_10_desc": "San Valentín",
         "read_now": "Leer Ahora",
         "nosso_catalogo": "Nuestro Catálogo",
         "catalogo_desc": "Explore nuestra colección de obras clásicas y contemporáneas"
